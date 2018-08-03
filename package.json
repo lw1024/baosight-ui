@@ -1,0 +1,27 @@
+{
+  "name": "baosight-ui",
+  "version": "1.0.0",
+  "description": "宝信软件`weex`开发UI组件库",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lw1024/baosight-ui.git"
+  },
+  "keywords": [
+    "'Weex",
+    "Ui'",
+    "'Weex'",
+    "'Vue'",
+    "'Mobile'",
+    "'WeexComponent'"
+  ],
+  "author": "luwei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lw1024/baosight-ui/issues"
+  },
+  "homepage": "https://github.com/lw1024/baosight-ui#readme"
+}
