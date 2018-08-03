@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "宝信软件`weex`开发UI组件库",
   "main": "index.js",
+  "lib": "vue",
+  "type": "weex",
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "build": "webpack --progress",
+    "watch": "webpack --progress --watch",
+    "serve": "anywhere -d build/example/ -p 8888",
+    "start": "npm run build && (npm run serve & npm run watch)"
   },
   "repository": {
     "type": "git",

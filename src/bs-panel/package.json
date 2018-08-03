@@ -1,0 +1,25 @@
+{
+  "name": "bs-panel",
+  "version": "0.1.0",
+  "description": "Weex 面板组件",
+  "main": "index.js",
+  "type": "weex",
+  "repository": "",
+  "keywords": [
+    "Weex",
+    "Vue",
+    "WeexComponent",
+    "Layout",
+    "Image",
+    "WeexUi"
+  ],
+  "weex": {
+    "plugins": {},
+    "market": {
+      "thumbnail": ""
+    }
+  },
+  "author": "陆伟",
+  "license": "MIT",
+  "dependencies": {}
+}
