@@ -10,5 +10,5 @@ import BsPanel from './src/bs-panel'
 
 export {
     BsButton,
-    BsPanel,
+    BsPanel
 }

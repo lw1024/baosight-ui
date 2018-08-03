@@ -28,7 +28,7 @@ export default {
     // title字体大小
     titleFontSize: {
       type: Number,
-      default: 30
+      default: 34
     },
   },
   data: function () {
@@ -49,17 +49,17 @@ export default {
 
 <style scoped>
 .wrapper {
-  /*flex-direction: row;*/
-  justify-content: center;
-  align-items: center;
+  width: 750;
 }
 
 .title-bar {
   height: 80;
   padding-left: 20;
   padding-right: 20;
+  justify-content: center;
 }
 
 .content {
+  width: 750;
 }
 </style>
