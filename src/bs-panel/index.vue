@@ -1,5 +1,6 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper"
+       :class="classArray">
     <div class="title-bar">
       <text :style="titleStyle">{{ title }}</text>
     </div>
@@ -30,10 +31,17 @@ export default {
       type: Number,
       default: 34
     },
-  },
-  data: function () {
-    return {
 
+    // 是否显示顶部边框线
+    topBorder: {
+      type: Boolean,
+      default: false
+    },
+
+    // 是否显示底部边框线
+    bottomBorder: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
@@ -42,6 +50,18 @@ export default {
         'color': this.titleColor,
         'font-size': this.titleFontSize
       }
+    },
+
+    classArray () {
+      var arr = []
+      if (this.topBorder) {
+        arr.push('line-top')
+      }
+      if (this.bottomBorder) {
+        arr.push('line-bottom')
+      }
+
+      return arr
     }
   }
 }
@@ -61,5 +81,17 @@ export default {
 
 .content {
   width: 750;
+}
+
+.line-top {
+  border-top-width: 1px;
+  border-top-color: #dfe1eb;
+  border-style: solid;
+}
+
+.line-bottom {
+  border-bottom-color: #dfe1eb;
+  border-bottom-width: 1px;
+  border-style: solid;
 }
 </style>
