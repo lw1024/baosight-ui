@@ -171,13 +171,24 @@ export default {
       const normalColor = getColor(ControlState.normal, Default.Title.Color)
       const titleColor = getColor(this.state, normalColor)
 
-      const spaceKey = this.direction === ButtonDirection.row ? 'margin-left' : 'margin-top'
+      const marginStyle = function (key, value) {
+        switch (key) {
+          case ButtonDirection.row:
+            return { 'margin-left': value }
 
-      return {
+          case ButtonDirection.column:
+            return { 'margin-top': value }
+
+          default:
+            return {}
+        }
+      }(this.direction, this.space)
+
+
+      return Object.assign({
         'color': titleColor,
-        'font-size': this.fontSize,
-        spaceKey: this.space
-      }
+        'font-size': this.fontSize
+      }, marginStyle)
     }
   },
   methods: {
